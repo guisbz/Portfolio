@@ -8,23 +8,36 @@
     }
 }
 
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: #22D4FD;
+    --cor-links: #4ea0ff;
+    --cor-fonte-alternativa: #cccccc;
+    --cor-fundo-alternativo: #1e1e1e;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     box-sizing: border-box;
-    background-color: black;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     line-height: 1.6;
 }
 
 .content-card {
+    /*Comentar margin, border-radius e box-shadow em caso de impressão de currículo */
     margin: 2% 20% 2% 15%;
     padding: 2% 2%;
-    background-color: #1e1e1e;
+    background-color: var(--cor-fundo-alternativo);
     border-radius: 12px;
     box-shadow: 0 0 5px #22D4FD;
 }
@@ -51,12 +64,12 @@ body {
 
 .content-card__contato {
     font-size: 1rem;
-    color: #cccccc;
+    color: var(--cor-fonte-alternativa);
     margin-top: 0.5rem;
 }
 
 .content-card__contato a {
-    color: #4ea0ff;
+    color: var(--cor-links);
     text-decoration: none;
 }
 
@@ -71,10 +84,10 @@ body {
 .content-card__section h1 {
     font-size: 2rem;
     text-align: center;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
-    color: #ffffff;
+    color: var(--cor-secundaria);
 }
 
 .content-card__section h2 {
@@ -82,16 +95,16 @@ body {
     border-bottom: 2px solid #333;
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
-    color: #ffffff;
+    color: var(--cor-secundaria);
 }
 
 .content-card__section__links {
     display: inline-block;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     background-color: #111;
     padding: 10px 16px;
     margin-bottom: 10px;
-    border-left: 4px solid #22D4FD;
+    border-left: 4px solid var(--cor-terciaria);
     border-radius: 8px;
     font-weight: 500;
     text-decoration: none;
@@ -99,10 +112,10 @@ body {
 }
 
 .content-card__section__links:hover {
-    background-color: #22D4FD;
-    color: black;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     transform: translateX(5px);
-    box-shadow: 0 0 10px #22D4FD;
+    box-shadow: 0 0 10px var(--cor-terciaria);
 }
 
 .content-card__section ul {
