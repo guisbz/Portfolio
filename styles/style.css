@@ -155,3 +155,37 @@ strong {
 
 
 }
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 2% 0;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .cabecalho__menu__esquerda,
+    .cabecalho__menu__direita {
+        gap: 30px;
+        margin: 0;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 40px;
+    }
+
+    .content__apresentacao {
+        width: auto;
+    }
+
+    .content__apresentacao__imagem {
+        width: 90%;
+    }
+
+}
