@@ -7,3 +7,17 @@
     text-align: justify;
     margin-bottom: 5;
 }
+
+@media (max-width: 1200px) {
+
+    .content__apresentacao__titulo {
+        text-align: center;
+    }
+
+    .cabecalho__menu__esquerda,
+    .cabecalho__menu__direita {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}

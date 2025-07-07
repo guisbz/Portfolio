@@ -126,3 +126,46 @@ body {
 .content-card__section ul li {
     margin-bottom: 0.5rem;
 }
+
+@media (max-width: 1200px) {
+
+    .cabecalho__menu__esquerda,
+    .cabecalho__menu__direita {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .content-card__section h1 {
+        font-size: 1.4rem;
+    }
+
+    .content-card {
+        margin: 5% 2%;
+        border-radius: 8px;
+    }
+
+    .content-card__header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content-card__foto {
+        width: 90%;
+        margin-top: 5%;
+        height: auto;
+        border-radius: 2%;
+        object-fit: cover;
+        border: none;
+    }
+
+    .content-card__nome {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .content-card__contato {
+        font-size: 0.8rem;
+    }
+
+}
